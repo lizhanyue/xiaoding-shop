@@ -1,0 +1,163 @@
+@mixin clrfix {
+    zoom : 1;
+    &::after { clear:both; display:block; height:0; visibility:hidden; content:"."; }
+}
+//登录模块
+.m-register-pop{
+	position: relative;
+	width: 470px;
+	height: 566px;
+	background: #fff;
+	//头部
+	.register-pop-header{
+		height: 56px;
+    line-height: 56px;
+		padding: 0 40px 0 34px;
+		background: #f4f4f4;
+		border-radius: 6px 6px 0 0;
+
+		h4{
+			float: left;
+			font-size: 18px;
+			color: #666;
+		}
+		.btn_close{
+			float: right;
+            position: relative;
+            left: 10px;
+            height: 10px;
+            width: 10px;
+            top: 23px;
+            background: url("/src/images/med-clinic-icons.png") no-repeat -200px -48px;
+            cursor: pointer;
+            &:hover{
+                background: url("/src/images/med-clinic-icons.png") no-repeat -219px -48px;
+            }
+		}
+	}
+	//表单部分
+	.register-form-wrap{
+		padding: 30px 35px 40px 35px;
+		.row {
+			margin: 0 0 20px;
+			@include clrfix();
+			.label {
+			   float: left;
+			   height : 40px;
+			   line-height : 40px;
+			   margin-right: 6px;
+			   width: 72px;
+			   color: #999999;
+			}
+			.inp-text,.s-inp-text{
+				float: left;
+				box-sizing: border-box;
+				height: 40px;
+				line-height: 20px;
+				border: 1px solid #e1e4e7;
+				border-radius: 4px;
+				padding: 10px 14px;
+				font-size: 14px;
+				&:hover{
+                    border: 1px solid #307af2;
+                }
+				&.error {
+				    border : 1px solid #e63c3c;
+				}
+				&::-webkit-input-placeholder {
+                    color: #cccccc;
+                }
+                &:-moz-placeholder {
+                    color: #cccccc;
+                }
+                &::-moz-placeholder {
+                    color: #cccccc;
+                }
+			}
+			.inp-text{
+				width: 319px;
+
+			}
+			.s-inp-text{
+				width: 319px;
+			}
+			.v-code{
+				display: block;
+				float: left;
+				width: 80px;
+				height: 38px;
+				border: 1px solid #e1e4e7;
+				border-radius: 4px;
+				margin: 0 0 0 10px;
+				overflow: hidden;
+				position: relative;
+				img{
+					max-height: 100%;
+					position:absolute;
+				}
+			}
+			.phone-code{
+				float: left;
+				color: #357ff6;
+				height: 40px;
+				line-height: 40px;
+				margin: 0 0 0 10px;
+				border: 0;
+                background-color: white;
+                cursor: pointer;
+                font-size: 14px;
+			}
+			.text-red{
+			    color: #f17347;
+			}
+		}
+		//协议
+        .register-pop-footer{
+            position: absolute;
+            left: 150px;
+            text-align: center;
+            font-size: 12px;
+            margin-top: -1px;
+            input{
+                float: left;
+            }
+            a{
+                color: #999;
+                text-decoration: underline;
+                margin-top: -1px;
+                float: left;
+                margin-left: 6px;
+            }
+
+
+        }
+		.btn-wrap{
+			margin: 35px 0 0;
+			.btn{
+				width: 298px;
+                margin-left: 51px;
+				padding : 0px;
+				height : 40px;
+				line-height : 40px;
+				text-align : center;
+				border-radius: 20px;
+				border: none;
+				color: #fff;
+				background: #357ef6;
+				font-size: 16px;
+				cursor: pointer;
+			}
+			.btn-gray{
+			   background:#C9C5C5;
+			}
+		}
+		//错误信息提示
+		.error-msg{
+			height: 24px;
+			line-height: 24px;
+			margin: -10px 0 0;
+			visibility: hidden;
+			color: #d9534f;
+		}
+	}
+}

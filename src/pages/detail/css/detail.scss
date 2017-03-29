@@ -1,0 +1,74 @@
+@import "../../../libs/css3-mixins.scss";
+.clndtl{
+  padding: 20px;
+  background-color: #fff;
+}
+.clndtlimg{
+  .clndtlbimg{
+    overflow: hidden;
+    img{
+      float: left;
+      width: 401px;
+      height: 280px;
+    }
+  }
+}
+.clndtl-info{
+  width: 520px;
+  padding: 5px 0 0 32px;
+  color: #333333;
+  font-size: 14px;
+  .clndtlif-title{
+    padding-bottom:25px;
+    h3{
+      font-size: 20px;
+    }
+    .clndtlif-iconeye{
+      span{
+        display: inline-block;
+        color: #c2c2c2;
+        font-size: 12px;
+        padding-left: 5px;
+      }
+      .clndt-icon-eye{
+        display: inline-block;;
+        width: 22px;
+        height: 18px;
+        background: url("/src/images/med-clinic-icons.png") -43px -49px no-repeat;
+        vertical-align: middle;
+      }
+    }
+    ul{
+      overflow: hidden;
+      padding-top: 5px;
+      height: 18px;
+      li{
+        float: left;
+        color: #307af2;
+        font-size: 12px;
+        padding-right: 10px;
+      }
+    }
+  }
+  .clndtl-clninfo{
+    .clndtlinfos{
+      overflow: hidden;
+      // line-height: 30px;
+      padding-bottom: 13px;
+      .clndtl-infott{
+        float: left;
+        color: #999999;
+      }
+      .clndtl-infode{
+        float: left;
+        padding-left: 15px;
+      }
+      .clndtl-ifleble{
+        li{
+          float: left;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}

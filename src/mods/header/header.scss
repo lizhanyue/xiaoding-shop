@@ -1,0 +1,99 @@
+// @import "../../../libs/css3-mixins.scss";
+$icons: "/src/images/med-clinic-icons.png";
+//通用头部
+.nav-header{
+	position: relative;
+	width: 1000px;
+	margin: 0 auto;
+	ul{
+		overflow: hidden;
+		text-align: center;
+		li{
+			float: left;
+			padding: 20px 15px;
+			a{
+				color: white;
+				font-size: 18px;
+				&:hover{
+					color: yellow;
+				}
+			}
+		}
+	}
+	.dlzc{
+		text-align: right;
+		span{
+			margin-left: 20px;
+			color: white;
+		}
+	}
+	// 搜索
+	.m-search{
+		position: absolute;;
+		bottom: 16px;
+		right: 0;
+		margin: 2px 0 0 0;
+		width: 141px;
+		height: 25px;
+		padding: 2px 20px;
+		border: 1px solid #e1e4e7;
+		border-radius: 60px;
+		background-color: #f6f6f6;
+		input{
+			border: none;
+			padding: 0;
+			width: 100%;
+			height: 100%;
+			outline:none;
+			font-size: 14px;
+			background-color: #f6f6f6;
+			&::-webkit-input-placeholder {
+									color: #d0d0d0;
+							}
+							&:-moz-placeholder {
+									color: #d0d0d0;
+							}
+							&::-moz-placeholder {
+									color: #d0d0d0;
+							}
+		}
+		.search-icon{
+			position: absolute;
+			right: 8px;
+			top: 8px;
+			display: block;
+			width: 17px;
+			height: 18px;
+			background: url($icons) no-repeat -300px 0;
+		}
+		// .xiala{
+		// 	width: 246px;
+		// 	display: none;
+		// 	position: absolute;
+		// 	top: 35px;
+		// 	left: -1px;
+		// 	background-color: #fff;
+		// 	z-index: 1000;
+		// 	color: #666666;
+		// 	// border: 1px solid #e1e4e7;
+		// 	// border-top: none;
+		// 	@include box-shadow(0,9px,18px,rgba(99,109,144,.16));
+		// 	li{
+		// 		line-height: 40px;
+		// 		font-size: 14px;
+		// 		padding-left: 20px;
+		// 		cursor: pointer;
+		// 		a{
+		// 			text-decoration: none;
+		// 			color: #f6f6f6;
+		// 		}
+		// 		.keycolor{
+		// 			color: #307af2;
+		// 		}
+		// 		&:hover{
+		// 			background: #f6f6f6;
+		// 		}
+		// 	}
+		// }
+	}
+}

@@ -1,0 +1,60 @@
+<div class="m-login-pop">
+	<div class="login-pop-header">
+		<h4>登录</h4>
+		<div class="btn_close js_close"></div>
+	</div>
+	<div class="login-form-wrap">
+		<form class="m-form">
+			<div class="row">
+			  <div class="ct">
+			    <input type="text" class="inp-text" placeholder="请输入手机号" data-model="phone" value="" data-jvalidator-pattern="required&mobile" maxlength="11" />
+			  </div>
+			</div>
+			<!-- 验证码登录 -->
+			<div id="v-code-mode">
+				<div class="row">
+				  <div class="ct">
+				    <input type="text" class="s-inp-text" placeholder="请输入校验码" data-model="captcha" data-jvalidator-pattern="required&alpha" />
+				    <a href="javascript:;" class="js-v-code v-code">
+				    	<img src="" alt="校验码">
+				    </a>
+				  </div>
+				</div>
+				<div class="row">
+				  <div class="ct">
+				    <input type="text" class="s-inp-text" placeholder="请输入短信验证码" data-model="sms" data-jvalidator-pattern="required" />
+				    <a href="javascript:;" class="phone-code js-phone-code">获取验证码</a>
+				  </div>
+				</div>
+			</div>
+			<!-- 手机号密码登录 -->
+			<div id="pwd-mode">
+				<div class="row">
+				  <div class="ct">
+				    <input type="password" class="inp-text" placeholder="请输入密码" data-model="password" data-jvalidator-pattern="required" />
+				  </div>
+				</div>
+				<div class="row">
+				  <div class="ct">
+				    <label class="auto-login">
+				  		<i class="checkbox js-ckbox"><input type="checkbox" value="1" data-model="auto" ></i>
+				  		<span>自动登录</span>
+			  		</label>
+				  </div>
+				</div>
+			</div>
+			<div class="row btn-wrap">
+				<button class="btn js-confirm" type="submit">登录</button>
+			</div>
+		</form>
+	</div>
+	<div class="login-pop-footer">
+		<div class="register">
+			<span>还没加入医联盟?</span>
+			<a href="javascript:;" class="js-register">立即注册</a>
+		</div>
+		<div class="login-way">
+			<a href="javascript:;" class="js-shift-mode">验证码登录</a>
+		</div>
+	</div>
+</div>

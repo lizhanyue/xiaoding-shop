@@ -1,0 +1,113 @@
+@import "../../../libs/css3-mixins.scss";
+.ct{
+	width: 1000px;
+	margin: 0 auto;
+  background-color: #f6f6f6;
+  font-family: "微软雅黑";
+}
+.ct-indexup{
+	position: relative;
+	margin-top: 20px;
+	.ggao{
+			position: absolute;
+			right: 0;
+			top: 0;
+	    height: 360px;
+	    width: 160px;
+			color: white;
+			@include box-shadow(0,9px,18px,rgba(99,109,144,.16));
+			h4{
+				font-size: 18px;
+				text-align: center;
+				line-height: 50px;
+				background: #72af03;
+			}
+			li{
+				font-size: 16px;
+				padding: 20px 0px 20px 10px;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				white-space: nowrap;
+				border-bottom:1px dotted #72af03;
+				a{
+									color: green;
+					&:hover{
+						text-decoration:underline;
+					}
+				}
+			}
+	}
+}
+// 轮播
+.g-slider-wrapper {
+    background: #f6f6f6;
+    height: 360px;
+    .g-slider {
+        width: 840px;
+        margin: 0 auto;
+        height: 360px;
+        overflow: hidden;
+        padding-right: 160px;
+    }
+}
+//模块头部
+.model-header{
+	position: relative;
+	font-size: 28px;
+	color: #333;
+	text-align: center;
+	//margin-top: 60px;
+			//height: 60px;
+			//line-height: 25px;
+			line-height: 136px;
+			height: 115px;
+}
+.clnc_list{
+		padding-bottom: 88px;
+		min-height: 439px;
+		margin-top: 10px;
+		ul{
+			// overflow: hidden;
+			// padding: 10px 0px 40px 0px;
+			li{
+				width: 235px;
+				float: left;
+				background-color: #fff;
+				font-size: 12px;
+				margin-top: 20px;
+				margin-left: 20px;
+				transition: box-shadow .2s linear;
+				-moz-transition: box-shadow .2s linear; /* Firefox 4 */
+				-webkit-transition: box-shadow .2s linear; /* Safari and Chrome */
+				-o-transition: box-shadow .2s linear; /* Opera */
+				img{
+					width: 235px;
+					height: 164px;
+					float: left;
+				}
+				.clnlist_info{
+					padding: 16px 18px 14px 18px;
+					h3{
+						font-size: 16px;
+						color: #333333;
+						height: 24px;
+						text-align: center;
+						overflow: hidden;
+						text-overflow: ellipsis;
+						white-space: nowrap;
+					}
+					.price{
+						color: red;
+						text-align: center;
+						font-size: 20px;
+					}
+				}
+				&:hover{
+					@include box-shadow(0,9px,18px,rgba(99,109,144,.16));
+				}
+			}
+			li:nth-child(4n+1){
+				margin-left: 0px;
+			}
+		}
+}

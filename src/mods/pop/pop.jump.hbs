@@ -1,0 +1,25 @@
+<div class="m-pop m-pop-alert" style="width:372px;">
+  <div class=" m-pop-hd" style="background:#f4f4f4;font-size:16px;padding-left:23px;color:#777777;height:58px;line-height:58px;">
+    提示 <div class="close js-btn bacha"></div>
+  </div>
+  <div class="m-pop-bd"  style="font-size:14px;">
+    {{#if jzNo}}
+    <p class="content" style="padding:30px 23px 30px;">{{content}}</p>
+    {{else}}
+    <p class="content" style="padding:30px 23px 30px;text-align:center">{{content}}</p>
+    {{/if}}
+    {{#if ctp}}
+      <div class="" style="padding:20px 23px 20px;text-align:center">
+        <span class="time">5</span>秒后窗口将自动返回
+      </div>
+    {{/if}}
+  </div>
+  <div class="m-pop-ft jump-button" style="padding-bottom:24px;">
+    {{#if oktxt}}
+      <button class="js-btn js-ok">{{oktxt}}</button>
+    {{/if}}
+    {{#if canceltxt }}
+      <button class="js-btn js-cancel" style="margin-left:30px;background:#357ff6;color:white;">{{canceltxt}}</button>
+    {{/if}}
+  </div>
+</div>

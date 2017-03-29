@@ -1,0 +1,30 @@
+{
+  "name": "",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "browserify": {
+    "transform": [
+      "browserify-shim"
+    ]
+  },
+  "browserify-shim": {
+    "jquery": "global:$"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "handlebars": "^4.0.5",
+    "hbsfy": "~2.7.0",
+    "juicer": "^0.6.14",
+    "juicerify": "^1.0.0",
+    "vue": "^2.2.6"
+  },
+  "dependencies": {
+    "browserify": "^13.1.0",
+    "browserify-shim": "^3.8.12"
+  }
+}

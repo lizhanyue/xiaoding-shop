@@ -1,0 +1,48 @@
+<div class="m-pop m-pop-address">
+    <div class="m-pop-hd">
+      {{title}} <div class="close js-close">&times;</div>
+    </div>
+  <div class="m-pop-bd ">
+      <div class="pop-main">
+          <div class="form-block">
+              <div class="form-col g-clear">
+                  <div class="item-title label">收货人</div>
+                  <div class="item-input">
+                      <input type="text" value="{{name}}" name="name" />
+                  </div>
+              </div>
+              <div class="form-col g-clear">
+
+                  <div class="item-title label">联系电话</div>
+                  <div class="item-input">
+                      <input type="tel" value="{{tel}}" name="phone" maxlength="11" />
+                  </div>
+              </div>
+              <div class="form-col g-clear">
+                  <div class="item-title label">所在地区</div>
+                  <div class="item-input" data-toggle="distpicker">
+                      <div class="select-block">
+                          <select data-province="请选择">
+                          </select>
+                      </div>
+                      <div class="select-block">
+                          <select data-city="请选择"></select>
+                      </div>
+                      <div class="select-block last">
+                          <select data-district="请选择"></select>
+                      </div>
+                  </div>
+              </div>
+              <div class="form-col g-clear">
+                  <div class="item-title label">详细地址</div>
+                  <div class="item-input">
+                      <input type="text" name="addr-info"/>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="m-pop-ft g-clear">
+    <button class="btn highlight js-ok">确认修改</button>
+  </div>
+</div>
