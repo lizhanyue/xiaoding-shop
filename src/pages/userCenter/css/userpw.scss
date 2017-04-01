@@ -1,0 +1,30 @@
+.pt-tt{
+  font-size: 20px;
+  padding: 5px 0px 25px 0px;
+}
+.userpb{
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  label{
+    width: 80px;
+    font-size: 16px;
+  }
+  input{
+    width: 314px;
+    font-size: 14px;
+    box-sizing: border-box;
+    height: 35px;
+    border: 1px solid #e1e4e7;
+    border-radius: 6px;
+    padding: 5px 18px;
+  }
+}
+#tj{
+  width: 80px;
+  padding: 5px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: 1px solid #e1e4e7;
+  background: white;
+}
